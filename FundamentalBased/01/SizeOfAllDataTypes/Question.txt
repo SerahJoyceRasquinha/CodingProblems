@@ -1,1 +1,0 @@
-Write a java program to get the size of all data types in java.
