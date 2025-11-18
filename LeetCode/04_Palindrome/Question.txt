@@ -1,0 +1,4 @@
+Finding out if a string is a palindrome or not.
+
+But not just a plain string...The string may have whitespaces, uppercase letters, special characters etc...
+We should remove all that and convert all the uppercase to lowercase and see if the resultant string is a palindrome or not.
