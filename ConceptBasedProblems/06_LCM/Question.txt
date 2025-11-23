@@ -1,0 +1,1 @@
+Find the lcm of a set of 'n' numbers

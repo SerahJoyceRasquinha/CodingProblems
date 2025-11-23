@@ -11,9 +11,16 @@ class Main {
     public static int factorial(int n){
         int num = n;
         int fact = 1;
-        for(int i=n; i>0; i--){
-            fact = fact*i;
+
+        if (num==0 || num==1){
+            return 1;
         }
-        return fact;
+
+        else{
+            for(int i=n; i>0; i--){
+                fact = fact*i;
+            }
+            return fact;
+        }            
     }
 }
