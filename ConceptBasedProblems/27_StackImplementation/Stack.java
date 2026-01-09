@@ -19,6 +19,8 @@ class Main{
             System.out.println("3 : PEEK");
             System.out.println("4 : EMPTY CHECK");
             System.out.println("5 : SIZE");
+            System.out.println("6 : FULL CHECK");
+            System.out.println("7 : CLEAR STACK");
             System.out.print("Choice: ");
             int op = sc.nextInt();
             
@@ -106,6 +108,41 @@ class Main{
                     
                     System.out.println("Size of the array WITH elements: "+count);
                     System.out.println("\n===================================");
+                    break;
+                    
+                case 6:
+                    System.out.println("\n===================================");
+                    System.out.println("STACK FULL OR NOT OPERATION");
+                    if (top == len){
+                        System.out.println("Stack is FULL");
+                         System.out.println("\nThe stack Pointer TOP value: "+top);
+                        break;
+                    }
+                    System.out.println("Stack is NOT FULL");
+                     System.out.println("\nThe stack Pointer TOP value: "+top);
+                      System.out.println("\n===================================");
+                    break;
+                    
+                case 7:
+                    System.out.println("\n===================================");
+                    System.out.println("CLEAR STACK OPERATION");
+                    if(top == -1){
+                        System.out.println("Stack is empty. So stack is clear");
+                        break;
+                    }
+                    int loop = top;
+                    for(i=0; i<=loop; i++){
+                        System.out.println("Clearing element: "+arr[top]+" at position: "+top);
+                        top--;
+                        System.out.println("The stack Pointer TOP value is now: "+top);
+                        System.out.println();
+                    }
+                    System.out.println("STACK IS CLEARED\n");
+                     System.out.println("\n===================================");
+                     break;
+                     
+                default:
+                    System.out.println("Invalid Option Chosen");
                     break;
             }
             System.out.println("--------------------------------");
